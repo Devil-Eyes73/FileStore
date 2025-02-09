@@ -26,6 +26,11 @@ TUT_VID = f"{TUT_VID}"
 @Bot.on_message(filters.command('start') & filters.private & subscribed1 & subscribed2 & subscribed3 & subscribed4)
 async def start_command(client: Client, message: Message):
     id = message.from_user.id
+    if not await present_user(id):
+        try:
+            await add_user(id)
+        except:
+            pass
 
     # Check if user is an admin and treat them as verified
     if id in ADMINS:
@@ -166,8 +171,8 @@ async def start_command(client: Client, message: Message):
             [
 
     [
-                    InlineKeyboardButton("☺ ᴀʙᴏᴜᴛ", callback_data = "about"),
-                    InlineKeyboardButton('🍁 ᴀɴɪᴍᴇᴛʀɪx', url='https://t.me/+-PWvjwEY0es3ZDFl')
+                    InlineKeyboardButton("⚡️ ᴀʙᴏᴜᴛ", callback_data = "about"),
+                    InlineKeyboardButton('🍁 sᴇʀɪᴇsғʟɪx', url='https://t.me/Team_Netflix/40')
 
     ]
             ]
