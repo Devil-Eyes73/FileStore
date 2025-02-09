@@ -45,7 +45,7 @@ FORCE_PIC = os.environ.get("FORCE_PIC", "https://graph.org/file/9c20384d190ab758
 
 # Turn this feature on or off using True or False put value inside  ""
 # TRUE for yes FALSE if no 
-TOKEN = True if os.environ.get('TOKEN', "True") == "True" else False 
+TOKEN = True if os.environ.get('TOKEN', "False") == "True" else False 
 SHORTLINK_URL = os.environ.get("SHORTLINK_URL", "publicearn.online")
 SHORTLINK_API = os.environ.get("SHORTLINK_API", "")
 VERIFY_EXPIRE = int(os.environ.get('VERIFY_EXPIRE', 600)) # Add time in seconds
