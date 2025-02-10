@@ -6,7 +6,7 @@ humanize
 schedule
 APscheduler
 # --- For-Database ------------ #
-pymongo
+pymongo==4.11
 motor
 dnspython
 # --- For-Web-Response ------- #
