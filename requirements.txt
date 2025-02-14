@@ -1,12 +1,12 @@
 https://codeload.github.com/KurimuzonAkuma/pyrogram/zip/refs/heads/dev
-pyrofork
+pyrofork==2.3.38
 TgCrypto
 pyromod
 humanize
 schedule
 APscheduler
 # --- For-Database ------------ #
-pymongo==4.11
+pymongo
 motor
 dnspython
 # --- For-Web-Response ------- #
